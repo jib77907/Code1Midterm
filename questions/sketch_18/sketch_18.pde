@@ -24,10 +24,14 @@ void draw() {
     for (int j = 0; j < gridH; j++) {
       greyColors[i][j]+=1;
       fill(greyColors[i][j]);
-      rect(map(i, 0, gridW, 0, width), map(j,0,gridH,0, height), width/gridW, height/gridH);
-     
+      rect(map(i, 0, gridW, 0, width), map(j, 0, gridH, 0, height), width/gridW, height/gridH);
+
+      if (greyColors[i][j] >= 255) {
+        greyColors[i][j] = map(j * gridW + i, 0, gridW * gridH, 255, 0);
+   
+        fill(greyColors[i][j]);
+        greyColors[i][j]+=1;
+      }
     }
   }
-  
-
 }
