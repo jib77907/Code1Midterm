@@ -27,7 +27,7 @@ void draw() {
       rect(map(i, 0, gridW, 0, width), map(j, 0, gridH, 0, height), width/gridW, height/gridH);
 
       if (greyColors[i][j] >= 255) {
-        greyColors[i][j] = map(j * gridW + i, 0, gridW * gridH, 255, 0);
+        greyColors[i][j] = 0; //map(j * gridW + i, 0, gridW * gridH, 0, 0);
    
         fill(greyColors[i][j]);
         greyColors[i][j]+=1;
