@@ -11,17 +11,17 @@ void setup() {
 }
 
 void draw() {
-  if (mouseX < width/2 + 200 && mouseX > width/2 - 200 && mouseY < height/2 + 200 && mouseY > height/2 -200){
-  insideCircle = true;
-  } else {
-  insideCircle = false;
-  }
+  //if (mouseX < width/2 + 200 && mouseX > width/2 - 200 && mouseY < height/2 + 200 && mouseY > height/2 -200){
+  //insideCircle = true;
+  //} else {
+  //insideCircle = false;
+  //}
   
   
   background(150);
   
   
-  if (mousePressed && insideCircle == true) {
+  if (mousePressed && dist(mouseX,mouseY,width/2,height/2) < 100) {
     fill(255);
   } else {
     fill(150);

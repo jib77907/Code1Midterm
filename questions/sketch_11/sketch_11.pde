@@ -11,8 +11,9 @@ void setup() {
 
 void draw() {
   background(150);
+  int x = 15;
   for (int i = 0; i < 10; i++) {
-    int x = int(map(i, 0, 10, 30, width));
+    //int x = int(map(i, 0, 10, 30, width));
     rect(x, 150, 30, 300);
     x += 60;
   }

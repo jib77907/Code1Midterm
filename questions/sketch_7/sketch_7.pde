@@ -8,9 +8,9 @@ void setup() {
 }
 
 void draw() {
-  for (int i = 50; i < width; i+=size) {
-    for (int j = 50; j < height; j+=size) {
-      ellipse (i, j, size, size);
+  for (int i = 50; i < 10; i+=size) {
+    for (int j = 50; j < 10; j+=size) {
+      ellipse (i *60, j*60, size, size);
     }
   }
 }

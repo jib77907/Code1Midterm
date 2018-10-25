@@ -21,7 +21,7 @@ void draw() {
   background(240);
   for (int i = 0; i < pos.length; i++) { 
 
-    pos[i] = map(i, 0, 100, 0, height);
+    pos[i] = map(i, 0, pos.length, 0, height);
 
     ellipse(width/2, pos[i], 50, 50);
   }

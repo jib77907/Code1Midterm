@@ -20,9 +20,9 @@ void draw() {
   d += incr;
   
  
-  if (d < 10|| d > 600) {
+  if (d < 0|| d > width) {
     
-    incr += -1;
+    incr = -incr;
 
 
 }

@@ -3,7 +3,7 @@
 // full 360 degree rotation. this is best accomplished 
 // with map().
 
-float angle = 0;
+//float angle = 0;
 
 void setup() {
   size(600, 600);
@@ -14,6 +14,6 @@ void setup() {
 void draw() {
   background(50);
   translate(width/2, height/2);
-  rotate(radians(angle + mouseX));
+  rotate(radians(map(mouseX, 0, width, 0, 360)));
   triangle(0, -100, 50, 100, -50, 100);
 }
